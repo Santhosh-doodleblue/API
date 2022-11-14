@@ -1,0 +1,15 @@
+.background {
+  background-color: rgb(210, 225, 225);
+}
+.wrap {
+  border: 2px solid black;
+}
+.wrap th {
+  border: 1px solid black;
+}
+.line {
+  border: 1px solid black;
+}
+.line td {
+  border: 1px solid black;
+}
