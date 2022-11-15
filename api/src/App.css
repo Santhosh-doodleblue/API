@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
 .background {
   background-color: #ededed;
 }
@@ -9,8 +11,21 @@
   line-height: 22px;
   margin-bottom: 40px;
 }
+.user-btn {
+  border: 1px solid #d3b24d;
+  border-radius: 5px;
+  background-color: #ededed;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.user-btn:hover {
+  background-color: #d3b24d;
+  color: #fefefe;
+  transition: 0.5s ease-in-out;
+}
 .serve {
   background-color: #ffffff;
+  margin-top: 10px;
   padding: 5px;
   color: #aa8b1c;
 }
@@ -34,8 +49,8 @@
 .child {
   position: absolute;
   font-size: larger;
-  right: 145px;
-  top: 120px;
+  right: 150px;
+  top: 130px;
 }
 .main-table {
   box-shadow: 0 0 3px;
@@ -43,23 +58,21 @@
 }
 .wrap {
   height: 50px;
-  background-color: #d3b24d;
-  border-radius: 25px;
+  background: #d3b24d;
+  border-radius: 5px 5px 0px 0px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
   color: #fefefe;
 }
-/* .wrap {
-  height: 50px;
-  background-color: #d3b24d;
-  border: none;
-  border-radius: 25px;
-  color: #fefefe;
-} */
 
 tbody tr:nth-child(even) {
-  background-color: #f5efdf;
+  background: rgba(254, 209, 15, 0.1);
 }
 tbody tr:nth-child(odd) {
-  background-color: #ededed;
+  background-color: #ffffff;
 }
 .line {
   height: 40px;
@@ -67,6 +80,10 @@ tbody tr:nth-child(odd) {
 .view {
   border: none;
   background-color: transparent;
+}
+.view-delete:hover {
+  color: red;
+  transition: 0.5s ease-in-out;
 }
 .prev {
   margin: 0 10px;

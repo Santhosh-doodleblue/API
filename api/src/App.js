@@ -7,8 +7,10 @@ import { BsSearch } from "react-icons/bs";
 import { MdDelete } from "react-icons/md";
 import { AiOutlineEye } from "react-icons/ai";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
+import { useNavigate } from "react-router";
 function App() {
   const [data, setData] = useState([]);
+  let navigate = useNavigate();
 
   const getData = async () => {
     try {
@@ -25,6 +27,10 @@ function App() {
   useEffect(() => {
     getData();
   }, []);
+
+  const createUser = () => {
+    navigate("/create");
+  };
 
   // const deleteData = (id) => {
   //   console.log(id, "asdutasyudf");
@@ -57,6 +63,9 @@ function App() {
       <div className="background">
         <div className="container d-flex justify-content-between pt-5">
           <p className="head ">Product Management</p>
+          <button onClick={createUser} className="user-btn">
+            + Create User
+          </button>
         </div>
         <div className="container d-flex justify-content-between serve ">
           <p className=" server ">Services</p>
@@ -72,7 +81,6 @@ function App() {
         <table className="container mt-4  text-center main-table rounded">
           <thead className="table-head">
             <tr className="wrap rounded">
-              <th>ID</th>
               <th>Name</th>
               <th>Mobile Number </th>
               <th>Age</th>
@@ -97,7 +105,6 @@ function App() {
               }) => {
                 return (
                   <tr key={id} className="line">
-                    <td>{id}</td>
                     <td>{name}</td>
                     <td>{mobileNumber}</td>
                     <td>{age}</td>
@@ -110,7 +117,10 @@ function App() {
                       <button className="view">
                         {<HiOutlinePencilSquare />}
                       </button>
-                      <button onClick={() => deleteData(id)} className="view">
+                      <button
+                        onClick={() => deleteData(id)}
+                        className="view view-delete"
+                      >
                         {<MdDelete />}
                       </button>
                     </td>

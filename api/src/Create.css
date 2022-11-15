@@ -1,0 +1,65 @@
+.header {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.anchor {
+  text-decoration: none;
+  color: black;
+  padding: 0 15px;
+}
+.anchor:hover {
+  color: #d3b24d;
+}
+.create-form {
+  padding: 25px;
+  height: 100vh;
+}
+.left {
+  margin-right: 75px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+.left input,
+.left select {
+  width: 100%;
+  padding: 5px 15px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eaeaea;
+}
+.right {
+  margin-left: 75px;
+}
+.right input,
+.right textarea {
+  width: 100%;
+  padding: 5px 15px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eaeaea;
+}
+.bottom {
+  padding-left: 400px;
+}
+.create-btn {
+  padding: 10px 25px;
+  width: 100px;
+  margin: 100px 10px;
+  border: 1px solid #d3b24d;
+  border-radius: 5px;
+  color: #d3b24d;
+  margin-left: 50px;
+  background-color: #fefefe;
+}
+.create-btn:hover {
+  background-color: #d3b24d;
+  color: #fefefe;
+  transition: 0.5s ease in out;
+}
