@@ -3,10 +3,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import eye from "./icons/eye.png";
+import edit from "./icons/edit.png";
 import { BsSearch } from "react-icons/bs";
 import { MdDelete } from "react-icons/md";
-import { AiOutlineEye } from "react-icons/ai";
-import { HiOutlinePencilSquare } from "react-icons/hi2";
+// import { AiOutlineEye } from "react-icons/ai";
+// import { HiOutlinePencilSquare } from "react-icons/hi2";
 import { useNavigate } from "react-router";
 function App() {
   const [data, setData] = useState([]);
@@ -56,6 +58,13 @@ function App() {
     } catch (err) {
       console.log(err);
     }
+  };
+
+  const editData = (id) => {
+    // navigate("/create");
+
+    setData(data);
+    console.log(setData);
   };
 
   return (
@@ -113,9 +122,11 @@ function App() {
                     <td>{description}</td>
                     <td>{qualification}</td>
                     <td>
-                      <button className="view">{<AiOutlineEye />}</button>
                       <button className="view">
-                        {<HiOutlinePencilSquare />}
+                        {<img src={eye} alt="missing" />}
+                      </button>
+                      <button onClick={() => editData(id)} className="view">
+                        {<img src={edit} alt="missing" />}
                       </button>
                       <button
                         onClick={() => deleteData(id)}

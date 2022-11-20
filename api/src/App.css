@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700&display=swap");
 
 .background {
   background-color: #ededed;
@@ -70,9 +70,17 @@
 
 tbody tr:nth-child(even) {
   background: rgba(254, 209, 15, 0.1);
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
 }
 tbody tr:nth-child(odd) {
   background-color: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
 }
 .line {
   height: 40px;
@@ -80,6 +88,9 @@ tbody tr:nth-child(odd) {
 .view {
   border: none;
   background-color: transparent;
+}
+.view-delete {
+  color: #424242;
 }
 .view-delete:hover {
   color: red;

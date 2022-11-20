@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { BiChevronLeft } from "react-icons/bi";
+// import { BiChevronLeft } from "react-icons/bi";
 import { useNavigate } from "react-router";
+import left from "./icons/chevron-left.png";
 import "./Create.css";
 
 function Create() {
@@ -87,11 +88,11 @@ function Create() {
         <div className="container form-content p-5 ">
           <div className="header d-flex ">
             <a className="pe-5 anchor" href="/">
-              <BiChevronLeft /> Users
+              <img src={left} alt="icon-missing" /> Users
             </a>
 
             <a className="anchor" href="/create">
-              <BiChevronLeft />
+              <img src={left} alt="icon-missing" />
               Add User
             </a>
           </div>
